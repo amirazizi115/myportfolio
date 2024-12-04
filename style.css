@@ -1,10 +1,3 @@
-/* #B5FFE1 - Aquamarine*/
-/* #93E5AB - Celadon*/
-/* #65B891 - Mint*/
-/* #4E878C - Dark cyan */
-/* #034732 - British racing green */
-/* #00241B - Dark Green */
-
 body {
     font-family: "Oxanium", serif;
     margin: 0;
@@ -79,7 +72,6 @@ h2 {
     padding-top: 10px;
     padding-bottom: 50px;
 }
-
 .landing h1 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 40px;
@@ -132,23 +124,14 @@ h2 {
 .column-80 {
     width: 80%;
 }
-
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    /* gap: 2px; */
 }
 .grid-item {
-    /* background-color: #65B891; */
-    /* padding: 20px; */
     text-align: center;
-    /* border-radius: 5px; */
 }
-
-
-
 .box {
     display: flex;
     justify-content: center;
@@ -182,14 +165,20 @@ footer {
 /* Media query for smaller screens */
 @media (max-width: 700px) {
     .flexbox{
-        flex-wrap: wrap; /* Allows content to wrap to the next line */
+        flex-wrap: wrap;
     }
     .column-20, .column-40, .column-50, .column-60, .column-80 {
-        width: 100%; /* Make both columns take full width */
+        width: 100%;
     }
     .container {
         padding-right: 10px;
         padding-left: 10px;
+    }
+    .achievements .column-60 {
+        margin-bottom: 30px;
+    }
+    .achievements h3 {
+        margin-top: 0;
     }
 }
 
@@ -210,3 +199,11 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: #557F67;
 }
+
+/* COLOUR PALETTE */
+/* #B5FFE1 - Aquamarine*/
+/* #93E5AB - Celadon*/
+/* #65B891 - Mint*/
+/* #4E878C - Dark cyan */
+/* #034732 - British racing green */
+/* #00241B - Dark Green */
